@@ -1,7 +1,7 @@
 
-
 ## RGF (Regularized Greedy Forest)
 <br>
+
 
 The **RGF** package is a wrapper of the [Regularized Greedy Forest (RGF)](https://github.com/fukatani/rgf_python) *python* package, which also includes a [Multi-core implementation (FastRGF)](https://github.com/baidu/fast_rgf). More details on the functionality of the RGF package can be found in the package Documentation and Vignette.
 
@@ -549,5 +549,21 @@ install.packages('RGF')
 
 
 ```
+<br>
+
+and to download the latest version from Github use the *install_github* function of the devtools package,
+<br><br>
+
+```R
+
+devtools::install_github(repo = 'mlampros/RGF')
+
+```
+<br>
+Use the following link to report bugs/issues,
+<br><br>
+
+[https://github.com/mlampros/RGF/issues](https://github.com/mlampros/RGF/issues)
+
 <br>
 
