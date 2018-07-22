@@ -12,7 +12,7 @@
 
 <meta name="author" content="Lampros Mouselimis" />
 
-<meta name="date" content="2018-05-10" />
+<meta name="date" content="2018-07-22" />
 
 <title>Regularized Greedy Forest in R</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Regularized Greedy Forest in R</h1>
 <h4 class="author"><em>Lampros Mouselimis</em></h4>
-<h4 class="date"><em>2018-05-10</em></h4>
+<h4 class="date"><em>2018-07-22</em></h4>
 
 
 
@@ -78,7 +78,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><br></p>
 <p>The <em>Regularized Greedy Forest</em> algorithm is explained in detail in the paper <a href="https://arxiv.org/abs/1109.0887"><em>Rie Johnson and Tong Zhang, Learning Nonlinear Functions Using Regularized Greedy Forest</em></a>. A small synopsis would be <em>“… the resulting method, which we refer to as regularized greedy forest (RGF), integrates two ideas: one is to include tree-structured regularization into the learning formulation; and the other is to employ the fully-corrective regularized greedy algorithm ….”</em>.</p>
 <p><br></p>
-<p>At the time of writing this Vignette (11 - 02 - 2018), there isn’t a corresponding implementation of the algorithm in the R language, so I decided to port the Python package in R taking advantage of the reticulate package. In the next lines, I will explain the functionality of the package and I compare RBF with other similar implementations, such as <a href="https://github.com/imbs-hl/ranger"><em>ranger</em></a> (random forest algorithm) and <a href="https://github.com/dmlc/xgboost/tree/master/R-package"><em>xgboost</em></a> (gradient boosting algorithm), in terms of time efficiency and error rate improvement.</p>
+<p>At the time of writing this Vignette (11 - 02 - 2018), there isn’t a corresponding implementation of the algorithm in the R language, so I decided to port the Python package in R taking advantage of the reticulate package. In the next lines, I will explain the functionality of the package and I compare RGF with other similar implementations, such as <a href="https://github.com/imbs-hl/ranger"><em>ranger</em></a> (random forest algorithm) and <a href="https://github.com/dmlc/xgboost/tree/master/R-package"><em>xgboost</em></a> (gradient boosting algorithm), in terms of time efficiency and error rate improvement.</p>
 <p><br></p>
 <div id="the-rgf-package" class="section level4">
 <h4>The RGF package</h4>
@@ -129,10 +129,22 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td align="center">get_params()</td>
 </tr>
 <tr class="even">
-<td align="center"></td>
+<td align="center">feature_importances()</td>
 <td align="center">score()</td>
 <td align="center"></td>
 <td align="center">score()</td>
+</tr>
+<tr class="odd">
+<td align="center">dump_model()</td>
+<td align="center">feature_importances()</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center">dump_model()</td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
