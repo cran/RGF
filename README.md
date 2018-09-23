@@ -1,11 +1,12 @@
-
-
 ## RGF (Regularized Greedy Forest)
 <br>
 
 
-The **RGF** package is a wrapper of the [Regularized Greedy Forest (RGF)](https://github.com/RGF-team/rgf_python) *python* package, which also includes a [Multi-core implementation (FastRGF)](https://github.com/baidu/fast_rgf). More details on the functionality of the RGF package can be found in the package Documentation and Vignette.
+The **RGF** package is a wrapper of the [Regularized Greedy Forest (RGF)](https://github.com/RGF-team/rgf_python) *python* package, which also includes a [Multi-core implementation (FastRGF)](https://github.com/RGF-team/rgf/tree/master/FastRGF). More details on the functionality of the RGF package can be found in the [blog-post](http://mlampros.github.io/2018/02/14/the_RGF_package/) and in the package Documentation. 
 
+<br>
+
+**UPDATE 26-07-2018**: A [Singularity image file](http://mlampros.github.io/2018/07/26/singularity_containers/) is available in case that someone intends to run *RGF* on Ubuntu Linux (locally or in a cloud instance) with all package requirements pre-installed. This allows the user to utilize the *RGF* package without having to spend time on the installation process.
 
 <br>
 
@@ -13,11 +14,11 @@ The **RGF** package is a wrapper of the [Regularized Greedy Forest (RGF)](https:
 
 [Rie Johnson and Tong Zhang, Learning Nonlinear Functions Using Regularized Greedy Forest](https://arxiv.org/abs/1109.0887)
 
-https://github.com/RGF-team/rgf/tree/master/RGF
+[RGF](https://github.com/RGF-team/rgf/tree/master/RGF)
 
-https://github.com/RGF-team/rgf/tree/master/FastRGF
+[FastRGF](https://github.com/RGF-team/rgf/tree/master/FastRGF)
 
-https://github.com/RGF-team/rgf/tree/master/python-package
+[python-package](https://github.com/RGF-team/rgf/tree/master/python-package)
 
 
 <br>
@@ -35,7 +36,7 @@ All modules should be installed in the default python configuration (the configu
 
 <br>
 
-#### **Debian/Ubuntu/Fedora**    [ Python 2.7 ]
+#### **Debian/Ubuntu/Fedora**    [ installed / tested on Python 2.7 ]
 
 <br>
 
@@ -78,7 +79,7 @@ sudo python setup.py install
 
 
 
-#### **Macintosh OSX**            [ Python >= 3.4 ]
+#### **Mac OS X**            [ installed / tested on Python >= 3.4 ]
 
 <br>
 
@@ -156,7 +157,7 @@ which gcc
 
 <br>
 
-After the new gcc is installed the user should continue with the installation of *rgf-python*,
+After the new gcc is installed the user should continue with the installation of *rgf_python*,
 
 <br>
 
@@ -238,7 +239,7 @@ UserWarning: Cannot find FastRGF executable files. FastRGF estimators will be un
 
 <br><br>
 
-#### **Windows OS**            [ Python >= 3.4 ]
+#### **Windows OS**            [ installed / tested on Python >= 3.4 ]
 
 <br>
 
@@ -355,7 +356,7 @@ A word of caution, If *Rtools* is already installed then make sure that it does 
 
 <br>
 
-*FastRGF* works only with [MinGW-w64](https://mingw-w64.org/doku.php ) because only this version provides POSIX threads. It can be downloaded from [MingW-W64-builds](https://mingw-w64.org/doku.php/download). After a successful download and installation the user should also update the environment variables field in (Control Panel >> System and Security >> System >> Advanced system settings >> Environment variables >> System variables >> Path >> Edit) by adding the following path (assuming the software is installed in **C:\\Program Files (x86)** folder),
+*FastRGF* works only with [MinGW-w64](http://mingw-w64.org/doku.php) because only this version provides POSIX threads. It can be downloaded from the project's [official SourceForge page](https://sourceforge.net/projects/mingw-w64/). After a successful download and installation the user should also update the environment variables field in (Control Panel >> System and Security >> System >> Advanced system settings >> Environment variables >> System variables >> Path >> Edit) by adding the following path (assuming the software is installed in **C:\\Program Files (x86)** folder),
 
 <br>
 
@@ -381,7 +382,7 @@ Before the installation of *rgf* I might have to remove *Rtools* environment var
 
 <br>
 
-**installation of rgf**
+**Installation of RGF, FastRGF and rgf_python**   [ *assuming the installation takes place in the **c:/** directory* ]
 
 <br>
 
@@ -392,7 +393,7 @@ Open a console with **administrator privileges** (right click on cmd and *run as
 ```R
 
 
-# download the most recent version of rgf-python from the github repository
+# download the most recent version of rgf-python from the GitHub repository 
 #--------------------------------------------------------------------------
 
 git clone http://github.com/RGF-team/rgf.git
@@ -406,9 +407,10 @@ cd /rgf/RGF/
 
 mkdir bin
 
+cd c:/
 
 
-# then download the latest "rgf.exe"" from https://github.com/RGF-team/rgf/releases and place the "rgf.exe"" inside the previously created "bin"" folder ( /rgf/RGF/bin )
+# then download the latest "rgf.exe" from https://github.com/RGF-team/rgf/releases and place the "rgf.exe" inside the previously created "bin" folder ( /rgf/RGF/bin )
 
 
 
@@ -433,7 +435,7 @@ mkdir build
 cd build
 
 
-# BEFORE PROCEEDING WITH cmake MAKE SURE THAT THE "Rtools" folder IS NOT IN THE SAME DIRECTORY (IF THAT IS THE CASE THEN REMOVE IT TEMPROARILY, i.e. copy-paste the "Rtools" folder somewhere else)
+# BEFORE PROCEEDING WITH cmake MAKE SURE THAT THE "Rtools" folder IS NOT IN THE SAME DIRECTORY (IF THAT IS THE CASE THEN REMOVE IT TEMPORARILY, i.e. copy-paste the "Rtools" folder somewhere else)
 
 
 cmake .. -G "MinGW Makefiles"
@@ -500,7 +502,7 @@ install.packages(RGF)
 
 <br>
 
-On windows the user can take advantage of the RGF package currently **only** from within the command prompt (console). First, find the full path of the installation location of R (possible if someone right-clicks in the R short-cut (probably on Desktop) and navigates to properties >> shortcut >> target). In my OS, for instance, R is located in **C:\\Program Files\\R\\R-3.4.0\\bin\\x64\\R**. Then, by opening a command prompt (console) and giving (for instance in my case),
+On windows the user can take advantage of the RGF package currently **only** from within the command prompt (console). First, find the full path of the installation location of R (possible if someone right-clicks in the R short-cut (probably on Desktop) and navigates to properties >> shortcut >> target). In case, for instance, that R is located in **C:\\Program Files\\R\\R-3.4.0\\bin\\x64\\R**, then, by opening a command prompt (console) and giving,
 
 <br>
 
@@ -537,19 +539,17 @@ install.packages('RGF')
 ```
 <br>
 
-and to download the latest version from Github use the *install_github* function of the devtools package,
+and to download the latest version from GitHub use the *install_github* function of the devtools package,
 <br><br>
 
 ```R
 
-devtools::install_github(repo = 'mlampros/RGF')
+devtools::install_github(repo = 'RGF-team/rgf', subdir = 'R-package')
 
 ```
 <br>
 Use the following link to report bugs/issues,
 <br><br>
 
-[https://github.com/mlampros/RGF/issues](https://github.com/mlampros/RGF/issues)
-
+[https://github.com/RGF-team/rgf/issues](https://github.com/RGF-team/rgf/issues)
 <br>
-

@@ -102,8 +102,8 @@
 #  
 #    if (is.factor(RESP)) {
 #  
-#      stop(simpleError("this function is meant for regression for classification
-#                       use the 'class_folds' function"))
+#      stop(simpleError("This function is meant for regression.
+#                       For classification use the 'class_folds' function."))
 #    }
 #  
 #    samp_vec = rep(1/folds, folds)
@@ -278,7 +278,7 @@
 
 ## ---- eval = F, echo = T-------------------------------------------------
 #  
-#  # download the data from my Github repository (tested on a Linux OS)
+#  # download the data from the following GitHub repository (tested on a Linux OS)
 #  
 #  system("wget
 #         https://raw.githubusercontent.com/mlampros/DataSets/master/africa_soil_train_data.zip")

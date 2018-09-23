@@ -12,7 +12,7 @@
 
 <meta name="author" content="Lampros Mouselimis" />
 
-<meta name="date" content="2018-07-22" />
+<meta name="date" content="2018-09-23" />
 
 <title>Regularized Greedy Forest in R</title>
 
@@ -70,11 +70,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Regularized Greedy Forest in R</h1>
 <h4 class="author"><em>Lampros Mouselimis</em></h4>
-<h4 class="date"><em>2018-07-22</em></h4>
+<h4 class="date"><em>2018-09-23</em></h4>
 
 
 
-<p>The RGF package is a wrapper of the <a href="https://github.com/fukatani/rgf_python"><em>Regularized Greedy Forest</em></a> <em>python</em> package, which also includes a <a href="https://github.com/baidu/fast_rgf"><em>Multi-core implementation (FastRGF)</em></a>. Portability from Python to R was made possible using the <a href="https://github.com/rstudio/reticulate">reticulate</a> package and the installation requires basic knowledge of Python. Except for the Linux Operating System, the installation on Macintosh and Windows might be somehow cumbersome (on windows the package currently can be used only from within the command prompt). Detailed installation instructions for all three Operating Systems can be found in the <em>README.md</em> file and in the <a href="https://github.com/fukatani/rgf_python"><em>rgf_python</em></a> Github repository.</p>
+<p>The RGF package is a wrapper of the <a href="https://github.com/RGF-team/rgf/tree/master/python-package"><em>Regularized Greedy Forest</em></a> <em>python</em> package, which also includes a <a href="https://github.com/RGF-team/rgf/tree/master/FastRGF"><em>Multi-core implementation (FastRGF)</em></a>. Portability from Python to R was made possible using the <a href="https://github.com/rstudio/reticulate">reticulate</a> package and the installation requires basic knowledge of Python. Except for the Linux Operating System, the installation on Macintosh and Windows might be somehow cumbersome (on windows the package currently can be used only from within the command prompt). Detailed installation instructions for all three Operating Systems can be found in the <em>README.md</em> file and in the <a href="https://github.com/RGF-team/rgf/tree/master/python-package"><em>rgf_python</em></a> GitHub repository.</p>
 <p><br></p>
 <p>The <em>Regularized Greedy Forest</em> algorithm is explained in detail in the paper <a href="https://arxiv.org/abs/1109.0887"><em>Rie Johnson and Tong Zhang, Learning Nonlinear Functions Using Regularized Greedy Forest</em></a>. A small synopsis would be <em>“… the resulting method, which we refer to as regularized greedy forest (RGF), integrates two ideas: one is to include tree-structured regularization into the learning formulation; and the other is to employ the fully-corrective regularized greedy algorithm ….”</em>.</p>
 <p><br></p>
@@ -100,7 +100,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <tbody>
 <tr class="odd">
 <td align="center">fit()</td>
-<td align="center">fit(()</td>
+<td align="center">fit()</td>
 <td align="center">fit()</td>
 <td align="center">fit()</td>
 </tr>
@@ -111,37 +111,37 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <td align="center">predict()</td>
 </tr>
 <tr class="odd">
-<td align="center">cleanup()</td>
-<td align="center">predict_proba()</td>
-<td align="center">cleanup()</td>
-<td align="center">predict_proba()</td>
-</tr>
-<tr class="even">
-<td align="center">get_params()</td>
-<td align="center">cleanup()</td>
-<td align="center">get_params()</td>
-<td align="center">cleanup()</td>
-</tr>
-<tr class="odd">
-<td align="center">score()</td>
-<td align="center">get_params()</td>
-<td align="center">score()</td>
-<td align="center">get_params()</td>
-</tr>
-<tr class="even">
-<td align="center">feature_importances()</td>
-<td align="center">score()</td>
 <td align="center"></td>
+<td align="center">predict_proba()</td>
+<td align="center"></td>
+<td align="center">predict_proba()</td>
+</tr>
+<tr class="even">
+<td align="center">cleanup()</td>
+<td align="center">cleanup()</td>
+<td align="center">cleanup()</td>
+<td align="center">cleanup()</td>
+</tr>
+<tr class="odd">
+<td align="center">get_params()</td>
+<td align="center">get_params()</td>
+<td align="center">get_params()</td>
+<td align="center">get_params()</td>
+</tr>
+<tr class="even">
+<td align="center">score()</td>
+<td align="center">score()</td>
+<td align="center">score()</td>
 <td align="center">score()</td>
 </tr>
 <tr class="odd">
+<td align="center">feature_importances()</td>
+<td align="center">feature_importances()</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="even">
 <td align="center">dump_model()</td>
-<td align="center">feature_importances()</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-<tr class="even">
-<td align="center"></td>
 <td align="center">dump_model()</td>
 <td align="center"></td>
 <td align="center"></td>
@@ -293,8 +293,8 @@ regr_folds =<span class="st"> </span><span class="cf">function</span>(folds, RES
 
   <span class="cf">if</span> (<span class="kw">is.factor</span>(RESP)) {
 
-    <span class="kw">stop</span>(<span class="kw">simpleError</span>(<span class="st">&quot;this function is meant for regression for classification </span>
-<span class="st">                     use the 'class_folds' function&quot;</span>))
+    <span class="kw">stop</span>(<span class="kw">simpleError</span>(<span class="st">&quot;This function is meant for regression. </span>
+<span class="st">                     For classification use the 'class_folds' function.&quot;</span>))
   }
 
   samp_vec =<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span><span class="op">/</span>folds, folds)
@@ -486,9 +486,9 @@ total time xgb <span class="dv">5</span> fold cross<span class="op">-</span>vali
 </tbody>
 </table>
 <p><br></p>
-<p>For the high-dimensional data (can be downloaded from my <a href="https://github.com/mlampros/DataSets">Github repository</a>) I’ll use the <em>FastRGF_Regressor</em> rather than the RGF_Regressor (comparison <strong>without doing hyper-parameter tuning</strong>),</p>
+<p>For the high-dimensional data (can be downloaded from the following <a href="https://github.com/mlampros/DataSets">GitHub repository</a>) we’ll use the <em>FastRGF_Regressor</em> rather than the RGF_Regressor (comparison <strong>without doing hyper-parameter tuning</strong>),</p>
 <p><br></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># download the data from my Github repository (tested on a Linux OS)</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># download the data from the following GitHub repository (tested on a Linux OS)</span>
 
 <span class="kw">system</span>(<span class="st">&quot;wget </span>
 <span class="st">       https://raw.githubusercontent.com/mlampros/DataSets/master/africa_soil_train_data.zip&quot;</span>)
