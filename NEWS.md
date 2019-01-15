@@ -1,3 +1,11 @@
+## RGF 1.0.6
+
+* We've added the *init_model* parameter to the *RGFRegressor* and *RGFClassifier*
+* We've added the *save_model* method to the *RGFRegressor* and *RGFClassifier*
+* Source files were broken up into one file per exported object as of [#266](https://github.com/RGF-team/rgf/pull/266)
+* Internal calls to estimator constructors were changed to use keyword, instead of positional, arguments. [#267](https://github.com/RGF-team/rgf/pull/267)
+
+
 ## RGF 1.0.5
 
 The RGF R package was integrated in the home repository of the Regularized Greedy Forest (RGF) library (https://github.com/RGF-team).
