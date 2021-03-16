@@ -1,4 +1,4 @@
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  library(RGF)
 #  
@@ -20,7 +20,7 @@
 #  (100, 10)
 #  
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  # conversion from a dgCMatrix object to a scipy sparse matrix
 #  #-------------------------------------------------------------
@@ -70,7 +70,7 @@
 #  (3, 3)
 #  
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  data(Boston, package = 'KernelKnn')
 #  
@@ -154,7 +154,7 @@
 #    spl
 #  }
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  NUM_FOLDS = 5
 #  
@@ -269,14 +269,14 @@
 #      " mean rmse on test data : ", mean(boston_xgb_te), "\n")
 #  
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  total time rgf 5 fold cross-validation :  0.7730639  mean rmse on test data :  3.832135
 #  total time ranger 5 fold cross-validation :  3.826846  mean rmse on test data :  4.17419
 #  total time xgb 5 fold cross-validation :  0.4316094  mean rmse on test data :  3.949122
 #  
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  # download the data from the following GitHub repository (tested on a Linux OS)
 #  
@@ -419,7 +419,7 @@
 #      " mean rmse on test data : ", mean(highdim_xgb_te), "\n")
 #  
 
-## ---- eval = F, echo = T-------------------------------------------------
+## ---- eval = F, echo = T------------------------------------------------------
 #  
 #  total time rgf 5 fold cross-validation :  92.31971  mean rmse on test data :  0.5155166
 #  total time ranger 5 fold cross-validation :  27.32866  mean rmse on test data :  0.5394164
