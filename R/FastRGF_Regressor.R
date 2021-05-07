@@ -84,7 +84,7 @@
 #' @examples
 #'
 #' try({
-#'     if (reticulate::py_available(initialize = TRUE)) {
+#'     if (reticulate::py_available(initialize = FALSE)) {
 #'         if (reticulate::py_module_available("rgf.sklearn")) {
 #'
 #'             library(RGF)
@@ -101,7 +101,7 @@
 #'             preds = fast_RGF_regr$predict(x)
 #'         }
 #'     }
-#' }, silent=TRUE)
+#' }, silent = TRUE)
 
 FastRGF_Regressor <- R6::R6Class(
     "FastRGF_Regressor",

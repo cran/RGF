@@ -86,7 +86,7 @@ the \emph{save_model} function saves a model to a file from which training can d
 \examples{
 
 try({
-    if (reticulate::py_available(initialize = TRUE)) {
+    if (reticulate::py_available(initialize = FALSE)) {
         if (reticulate::py_module_available("rgf.sklearn")) {
 
             library(RGF)
@@ -103,7 +103,7 @@ try({
             preds = RGF_regr$predict(x)
         }
     }
-}, silent=TRUE)
+}, silent = TRUE)
 }
 \references{
 \emph{https://github.com/RGF-team/rgf/tree/master/python-package}, \emph{Rie Johnson and Tong Zhang, Learning Nonlinear Functions Using Regularized Greedy Forest}

@@ -110,7 +110,7 @@
 #' @examples
 #'
 #' try({
-#'     if (reticulate::py_available(initialize = TRUE)) {
+#'     if (reticulate::py_available(initialize = FALSE)) {
 #'         if (reticulate::py_module_available("rgf.sklearn")) {
 #'
 #'             library(RGF)
@@ -127,7 +127,7 @@
 #'             preds = RGF_class$predict_proba(x)
 #'         }
 #'     }
-#' }, silent=TRUE)
+#' }, silent = TRUE)
 
 RGF_Classifier <- R6::R6Class(
     "RGF_Classifier",

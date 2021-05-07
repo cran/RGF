@@ -72,7 +72,7 @@ the \emph{score} function returns the coefficient of determination ( R^2 ) for t
 \examples{
 
 try({
-    if (reticulate::py_available(initialize = TRUE)) {
+    if (reticulate::py_available(initialize = FALSE)) {
         if (reticulate::py_module_available("rgf.sklearn")) {
 
             library(RGF)
@@ -89,7 +89,7 @@ try({
             preds = fast_RGF_regr$predict(x)
         }
     }
-}, silent=TRUE)
+}, silent = TRUE)
 }
 \references{
 \emph{https://github.com/RGF-team/rgf/tree/master/python-package}, \emph{Tong Zhang, FastRGF: Multi-core Implementation of Regularized Greedy Forest (https://github.com/RGF-team/rgf/tree/master/FastRGF)}

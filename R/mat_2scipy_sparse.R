@@ -10,7 +10,7 @@
 #' @examples
 #'
 #' try({
-#'     if (reticulate::py_available(initialize = TRUE)) {
+#'     if (reticulate::py_available(initialize = FALSE)) {
 #'         if (reticulate::py_module_available("scipy")) {
 #'
 #'             library(RGF)
@@ -26,7 +26,7 @@
 #'             print(res$shape)
 #'         }
 #'     }
-#' }, silent=TRUE)
+#' }, silent = TRUE)
 
 mat_2scipy_sparse = function(x, format = 'sparse_row_matrix') {
 
