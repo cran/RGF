@@ -12,21 +12,21 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-fit}{\code{Internal_class$fit()}}
-\item \href{#method-predict}{\code{Internal_class$predict()}}
-\item \href{#method-predict_proba}{\code{Internal_class$predict_proba()}}
-\item \href{#method-cleanup}{\code{Internal_class$cleanup()}}
-\item \href{#method-get_params}{\code{Internal_class$get_params()}}
-\item \href{#method-score}{\code{Internal_class$score()}}
-\item \href{#method-feature_importances}{\code{Internal_class$feature_importances()}}
-\item \href{#method-dump_model}{\code{Internal_class$dump_model()}}
-\item \href{#method-save_model}{\code{Internal_class$save_model()}}
-\item \href{#method-clone}{\code{Internal_class$clone()}}
+\item \href{#method-Internal_class-fit}{\code{Internal_class$fit()}}
+\item \href{#method-Internal_class-predict}{\code{Internal_class$predict()}}
+\item \href{#method-Internal_class-predict_proba}{\code{Internal_class$predict_proba()}}
+\item \href{#method-Internal_class-cleanup}{\code{Internal_class$cleanup()}}
+\item \href{#method-Internal_class-get_params}{\code{Internal_class$get_params()}}
+\item \href{#method-Internal_class-score}{\code{Internal_class$score()}}
+\item \href{#method-Internal_class-feature_importances}{\code{Internal_class$feature_importances()}}
+\item \href{#method-Internal_class-dump_model}{\code{Internal_class$dump_model()}}
+\item \href{#method-Internal_class-save_model}{\code{Internal_class$save_model()}}
+\item \href{#method-Internal_class-clone}{\code{Internal_class$clone()}}
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-fit"></a>}}
-\if{latex}{\out{\hypertarget{method-fit}{}}}
+\if{html}{\out{<a id="method-Internal_class-fit"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-fit}{}}}
 \subsection{Method \code{fit()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$fit(x, y, sample_weight = NULL)}\if{html}{\out{</div>}}
@@ -34,8 +34,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-predict"></a>}}
-\if{latex}{\out{\hypertarget{method-predict}{}}}
+\if{html}{\out{<a id="method-Internal_class-predict"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-predict}{}}}
 \subsection{Method \code{predict()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$predict(x)}\if{html}{\out{</div>}}
@@ -43,8 +43,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-predict_proba"></a>}}
-\if{latex}{\out{\hypertarget{method-predict_proba}{}}}
+\if{html}{\out{<a id="method-Internal_class-predict_proba"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-predict_proba}{}}}
 \subsection{Method \code{predict_proba()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$predict_proba(x)}\if{html}{\out{</div>}}
@@ -52,8 +52,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-cleanup"></a>}}
-\if{latex}{\out{\hypertarget{method-cleanup}{}}}
+\if{html}{\out{<a id="method-Internal_class-cleanup"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-cleanup}{}}}
 \subsection{Method \code{cleanup()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$cleanup()}\if{html}{\out{</div>}}
@@ -61,8 +61,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-get_params"></a>}}
-\if{latex}{\out{\hypertarget{method-get_params}{}}}
+\if{html}{\out{<a id="method-Internal_class-get_params"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-get_params}{}}}
 \subsection{Method \code{get_params()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$get_params(deep = TRUE)}\if{html}{\out{</div>}}
@@ -70,8 +70,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-score"></a>}}
-\if{latex}{\out{\hypertarget{method-score}{}}}
+\if{html}{\out{<a id="method-Internal_class-score"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-score}{}}}
 \subsection{Method \code{score()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$score(x, y, sample_weight = NULL)}\if{html}{\out{</div>}}
@@ -79,8 +79,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-feature_importances"></a>}}
-\if{latex}{\out{\hypertarget{method-feature_importances}{}}}
+\if{html}{\out{<a id="method-Internal_class-feature_importances"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-feature_importances}{}}}
 \subsection{Method \code{feature_importances()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$feature_importances()}\if{html}{\out{</div>}}
@@ -88,8 +88,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-dump_model"></a>}}
-\if{latex}{\out{\hypertarget{method-dump_model}{}}}
+\if{html}{\out{<a id="method-Internal_class-dump_model"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-dump_model}{}}}
 \subsection{Method \code{dump_model()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$dump_model()}\if{html}{\out{</div>}}
@@ -97,8 +97,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-save_model"></a>}}
-\if{latex}{\out{\hypertarget{method-save_model}{}}}
+\if{html}{\out{<a id="method-Internal_class-save_model"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-save_model}{}}}
 \subsection{Method \code{save_model()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Internal_class$save_model(filename)}\if{html}{\out{</div>}}
@@ -106,8 +106,8 @@ Internal R6 class for all secondary functions used in RGF and FastRGF
 
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-Internal_class-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-Internal_class-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{

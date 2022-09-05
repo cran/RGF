@@ -9,7 +9,7 @@ RGF_mod <- NULL; RGF_utils <- NULL; SCP <- NULL;
 .onLoad <- function(libname, pkgname) {
 
   try({
-    if (reticulate::py_available(initialize = FALSE)) {
+    if (reticulate::py_available(initialize = TRUE)) {
 
       try({
         RGF_mod <<- reticulate::import("rgf.sklearn", delay_load = TRUE)
@@ -25,4 +25,9 @@ RGF_mod <- NULL; RGF_utils <- NULL; SCP <- NULL;
 
     }
   }, silent=TRUE)
+}
+
+
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage("If the 'RGF' package gives the following error: 'attempt to apply non-function' then make sure to open a new R session and run 'reticulate::py_config()' before loading the package!")
 }

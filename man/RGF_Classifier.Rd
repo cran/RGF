@@ -117,33 +117,33 @@ try({
 \emph{https://github.com/RGF-team/rgf/tree/master/python-package}, \emph{Rie Johnson and Tong Zhang, Learning Nonlinear Functions Using Regularized Greedy Forest}
 }
 \section{Super class}{
-\code{\link[RGF:Internal_class]{RGF::Internal_class}} -> \code{RGF_Classifier}
+\code{RGF::Internal_class} -> \code{RGF_Classifier}
 }
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
-\item \href{#method-new}{\code{RGF_Classifier$new()}}
-\item \href{#method-clone}{\code{RGF_Classifier$clone()}}
+\item \href{#method-RGF_Classifier-new}{\code{RGF_Classifier$new()}}
+\item \href{#method-RGF_Classifier-clone}{\code{RGF_Classifier$clone()}}
 }
 }
-\if{html}{
-\out{<details ><summary>Inherited methods</summary>}
-\itemize{
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="cleanup">}\href{../../RGF/html/Internal_class.html#method-cleanup}{\code{RGF::Internal_class$cleanup()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="dump_model">}\href{../../RGF/html/Internal_class.html#method-dump_model}{\code{RGF::Internal_class$dump_model()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="feature_importances">}\href{../../RGF/html/Internal_class.html#method-feature_importances}{\code{RGF::Internal_class$feature_importances()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="fit">}\href{../../RGF/html/Internal_class.html#method-fit}{\code{RGF::Internal_class$fit()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="get_params">}\href{../../RGF/html/Internal_class.html#method-get_params}{\code{RGF::Internal_class$get_params()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="predict">}\href{../../RGF/html/Internal_class.html#method-predict}{\code{RGF::Internal_class$predict()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="predict_proba">}\href{../../RGF/html/Internal_class.html#method-predict_proba}{\code{RGF::Internal_class$predict_proba()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="save_model">}\href{../../RGF/html/Internal_class.html#method-save_model}{\code{RGF::Internal_class$save_model()}}\out{</span>}
-\item \out{<span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="score">}\href{../../RGF/html/Internal_class.html#method-score}{\code{RGF::Internal_class$score()}}\out{</span>}
-}
-\out{</details>}
-}
+\if{html}{\out{
+<details><summary>Inherited methods</summary>
+<ul>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="cleanup"><a href='../../RGF/html/Internal_class.html#method-Internal_class-cleanup'><code>RGF::Internal_class$cleanup()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="dump_model"><a href='../../RGF/html/Internal_class.html#method-Internal_class-dump_model'><code>RGF::Internal_class$dump_model()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="feature_importances"><a href='../../RGF/html/Internal_class.html#method-Internal_class-feature_importances'><code>RGF::Internal_class$feature_importances()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="fit"><a href='../../RGF/html/Internal_class.html#method-Internal_class-fit'><code>RGF::Internal_class$fit()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="get_params"><a href='../../RGF/html/Internal_class.html#method-Internal_class-get_params'><code>RGF::Internal_class$get_params()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="predict"><a href='../../RGF/html/Internal_class.html#method-Internal_class-predict'><code>RGF::Internal_class$predict()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="predict_proba"><a href='../../RGF/html/Internal_class.html#method-Internal_class-predict_proba'><code>RGF::Internal_class$predict_proba()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="save_model"><a href='../../RGF/html/Internal_class.html#method-Internal_class-save_model'><code>RGF::Internal_class$save_model()</code></a></span></li>
+<li><span class="pkg-link" data-pkg="RGF" data-topic="Internal_class" data-id="score"><a href='../../RGF/html/Internal_class.html#method-Internal_class-score'><code>RGF::Internal_class$score()</code></a></span></li>
+</ul>
+</details>
+}}
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-new"></a>}}
-\if{latex}{\out{\hypertarget{method-new}{}}}
+\if{html}{\out{<a id="method-RGF_Classifier-new"></a>}}
+\if{latex}{\out{\hypertarget{method-RGF_Classifier-new}{}}}
 \subsection{Method \code{new()}}{
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{RGF_Classifier$new(
@@ -211,8 +211,8 @@ try({
 }
 }
 \if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-clone"></a>}}
-\if{latex}{\out{\hypertarget{method-clone}{}}}
+\if{html}{\out{<a id="method-RGF_Classifier-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-RGF_Classifier-clone}{}}}
 \subsection{Method \code{clone()}}{
 The objects of this class are cloneable with this method.
 \subsection{Usage}{
