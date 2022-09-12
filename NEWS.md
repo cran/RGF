@@ -1,3 +1,7 @@
+## RGF 1.1.1
+* I disabled the tests that require Python on CRAN due to the fact that I don't know beforehand which Python version is used and this leads to errors.
+
+
 ## RGF 1.1.0
 * Upgraded *roxygen2* to version 7.2.1 to fix the CRAN NOTE *"Warning: missing </span> before <p>"*
 

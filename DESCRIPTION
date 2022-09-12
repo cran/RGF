@@ -1,8 +1,8 @@
 Package: RGF
 Type: Package
 Title: Regularized Greedy Forest
-Version: 1.1.0
-Date: 2022-09-05
+Version: 1.1.1
+Date: 2022-09-10
 Authors@R: c( person("Lampros", "Mouselimis", email = "mouselimislampros@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "https://orcid.org/0000-0002-8024-1546")), person("Ryosuke", "Fukatani", role = "cph", comment = "Author of the python wrapper of the 'Regularized Greedy Forest' machine learning algorithm"), person("Nikita", "Titov", role = "cph", comment = "Author of the python wrapper of the 'Regularized Greedy Forest' machine learning algorithm"), person("Tong", "Zhang", role = "cph", comment = "Author of the 'Regularized Greedy Forest' and of the Multi-core implementation of Regularized Greedy Forest machine learning algorithm"), person("Rie", "Johnson", role = "cph", comment = "Author of the 'Regularized Greedy Forest' machine learning algorithm") )
 BugReports: https://github.com/RGF-team/rgf/issues
 URL: https://github.com/RGF-team/rgf/tree/master/R-package
@@ -18,7 +18,7 @@ Encoding: UTF-8
 RoxygenNote: 7.2.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-09-05 17:21:54 UTC; lampros
+Packaged: 2022-09-10 12:38:08 UTC; lampros
 Author: Lampros Mouselimis [aut, cre] (<https://orcid.org/0000-0002-8024-1546>),
   Ryosuke Fukatani [cph] (Author of the python wrapper of the
     'Regularized Greedy Forest' machine learning algorithm),
@@ -31,4 +31,4 @@ Author: Lampros Mouselimis [aut, cre] (<https://orcid.org/0000-0002-8024-1546>),
     learning algorithm)
 Maintainer: Lampros Mouselimis <mouselimislampros@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-09-05 18:10:09 UTC
+Date/Publication: 2022-09-12 06:42:59 UTC

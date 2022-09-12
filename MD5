@@ -1,8 +1,8 @@
-6c616f127ce6250ddf566f03fabdfca6 *DESCRIPTION
+f7a6870c88283bd65ec7f0034216fd37 *DESCRIPTION
 942474c363e2fff73dd0df2e3af1bdd1 *LICENSE
 066fc52fae28e294a30619d3ce8cf20a *LICENSE.note
 64ad48d0a71845c86d851089d2d2bbc9 *NAMESPACE
-089be93ab112e8bf4f96931ec58a1d22 *NEWS.md
+661eade16f6e3eb8398e71a0e6662fa1 *NEWS.md
 6b8ea33ea54e7b3d000b47a0ef24c682 *R/FastRGF_Classifier.R
 8b7c6fdf2cbe60b597974aebc5c79002 *R/FastRGF_Regressor.R
 1cb59a62c3bc56901f0a7e27fdd9a5a3 *R/Internal_class.R
@@ -12,12 +12,12 @@ b75682c394e8b9755221896249e83e58 *R/RGF_Regressor.R
 f061800acf262681d89aa5f9a1cab5a7 *R/TO_scipy_sparse.R
 3d82760dcc8b1153d90f4c164d9f1d9b *R/mat_2scipy_sparse.R
 656ad16ea9a64a9486725f581a768758 *R/package.R
-2ea9d7fced57cde435bc422af073ecd9 *README.md
+c56bca50de18a4c353e99eafb5ed026b *README.md
 357ed27ad5505147b4c38825506057e1 *build/vignette.rds
 5bd16dd8ff3ad26dd86c820615826291 *inst/CITATION
 6fa299da1956e80fca3baea9858f0605 *inst/doc/the_RGF_package.R
 640d3b50f74f27bb889154eb2fd3c621 *inst/doc/the_RGF_package.Rmd
-6b467b293f4f23476b06667ba24df5d7 *inst/doc/the_RGF_package.html
+47657fb41918750d08ca1556a42408f7 *inst/doc/the_RGF_package.html
 036940c0ce56fc7dcd8b00b8e05d71c7 *man/FastRGF_Classifier.Rd
 23f8e4daba868203a32c9eb0dc76bcc2 *man/FastRGF_Regressor.Rd
 4b5a98898c4df0a23c193e562b54ee49 *man/Internal_class.Rd
@@ -31,5 +31,5 @@ d20b316e82aaa42b19fdd639e0a96e87 *tests/testthat.R
 20ba512804e90e4b95ee0675c0008184 *tests/testthat/helper-skip.R
 4f921d0af8b27e259f8278dcd2589ac3 *tests/testthat/setup.R
 12ce91184c20fb455adf82b67e927846 *tests/testthat/teardown.R
-5f32f070864e22f0eb50f26b54bcc001 *tests/testthat/test-RGF_package.R
+02e34f36edf96762e9b3aa8624e46105 *tests/testthat/test-RGF_package.R
 640d3b50f74f27bb889154eb2fd3c621 *vignettes/the_RGF_package.Rmd
